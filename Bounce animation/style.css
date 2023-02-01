@@ -1,0 +1,42 @@
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100vh
+  }
+  
+  span {
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: blue;
+    border-radius: 100%;
+    border: 2px solid black;
+    animation: bounce infinite 0.8s;
+  }
+  
+  span:nth-child(1){
+    animation-delay: .2s;
+  }
+  span:nth-child(2){
+    animation-delay: .4s;
+  }
+  span:nth-child(3){
+    animation-delay: .6s;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translate(0 ,0)
+    }
+    80% {
+      transform: translate(0 , -60px)
+    }
+    
+    100% {
+      transform: translate(0 ,0)
+    } 
+    
+  }
+  
