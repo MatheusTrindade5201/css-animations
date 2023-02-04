@@ -1,0 +1,17 @@
+.check {
+    display: none;
+  }
+  
+  .object-true {
+    display: block;
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    border-radius: 50%;
+    transition: all 0.5s;
+  }
+  
+  .check:checked ~ .object > .object-true {
+    border-radius: 80px;
+  }
+  
